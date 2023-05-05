@@ -6,10 +6,14 @@ class BodyClass
 {
     public function __construct()
     {
-        add_filter('body_class', [
-            $this,
-            'bodyClass',
-        ]);
+        $current_theme = wp_get_theme();
+
+        if ('sage' === $current_theme->get('Template') || 'sage' === $current_theme->get('Stylesheet')) {
+            add_filter('body_class', [
+                $this,
+                'bodyClass',
+            ]);
+        }
     }
 
     public function bodyClass($classes): array
