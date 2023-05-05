@@ -1,0 +1,21 @@
+{
+  "name": "samhayman/aabr",
+  "description": "Register ACF Pro blocks in, what I think, is a decent way",
+  "type": "wordpress-plugin",
+  "version": "1.0.1",
+  "autoload": {
+    "psr-4": {
+      "Aabr\\": "app/"
+    }
+  },
+  "authors": [
+    {
+      "name": "Sam Hayman",
+      "email": "hayman.sam@gmail.com"
+    }
+  ],
+  "require": {},
+  "require-dev": {
+    "composer/installers": "v2.2.0"
+  }
+}
